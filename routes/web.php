@@ -28,7 +28,7 @@ Route::get('/top',[TopController::class,'index']);
 
 Route::get('/majan/listattendant',[ListattendantController::class,'index']);
 
-Route::get('/majan/recommend',[RecommendController::class,'index']);
+Route::get('/recommend',[RecommendController::class,'index']);
 
 Route::get('/majan/attendantregister',[AttendantregisterController::class,'index']);
 
