@@ -24,25 +24,25 @@ use App\Http\Controllers\DetailController;
 
 Route::get('/', function () {return view('index');});
 
-Route::get('/top',[TopController::class,'index']);
+Route::get('/majan/top',[TopController::class,'index']);
 
-Route::get('/listattendant',[ListattendantController::class,'index']);
+Route::get('/majan/listattendant',[ListattendantController::class,'index']);
 
-Route::get('/recommend',[RecommendController::class,'index']);
+Route::get('/majan/recommend',[RecommendController::class,'index']);
 
-Route::get('/attendantregister',[AttendantregisterController::class,'index']);
+Route::get('/majan/attendantregister',[AttendantregisterController::class,'index']);
 
-Route::get('/done',[DoneController::class,'index']);
+Route::get('/majan/done',[DoneController::class,'index']);
 
-Route::post('/done',[DoneController::class,'store']);
+Route::post('/majan/done',[DoneController::class,'store']);
 
-Route::get('/admingamen',[AdmingamenController::class,'index']);
+Route::get('/majan/admingamen',[AdmingamenController::class,'index']);
 
-Route::get('/myprofile',[MyprofileController::class,'index']);
+Route::get('/majan/myprofile',[MyprofileController::class,'index']);
 
-Route::get('/yameru',[YameruController::class,'index']);
+Route::get('/majan/yameru',[YameruController::class,'index']);
 
-Route::get('/detail/{user_id}',[DetailController::class,'show']);
+Route::get('/majan/detail/{user_id}',[DetailController::class,'show']);
 
 Auth::routes();
 
