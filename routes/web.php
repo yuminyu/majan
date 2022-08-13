@@ -26,11 +26,11 @@ Route::get('/', function () {return view('index');});
 
 Route::get('/top',[TopController::class,'index']);
 
-Route::get('/listattendant',[ListattendantController::class,'index']);
+Route::get('/majan/listattendant',[ListattendantController::class,'index']);
 
-Route::get('/recommend',[RecommendController::class,'index']);
+Route::get('/majan/recommend',[RecommendController::class,'index']);
 
-Route::get('/attendantregister',[AttendantregisterController::class,'index']);
+Route::get('/majan/attendantregister',[AttendantregisterController::class,'index']);
 
 Route::get('/done',[DoneController::class,'index']);
 
