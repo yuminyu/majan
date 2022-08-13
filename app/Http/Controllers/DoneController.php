@@ -39,7 +39,7 @@ class DoneController extends Controller
 
         $user->save();
         
-        return redirect('/top');
+        return redirect('/majan/done');
         
     }
 }
