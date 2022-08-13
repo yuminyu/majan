@@ -2,16 +2,19 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <h1>Welcome mypage</h1>         
+    <div class="row">
+        <div class="col">
+            <p><img src="{{ asset('img/welcom.jpg') }}" alt="" class="my-5 w-100"></p>
         </div>
-        @if(Auth::check())
-        <div class="col-md-8">
-            <p><a href="/majan/top">ログイン後のTop画面にいく</a></p>
+        <div class="col d-flex align-items-center justify-content-center">
+            <p class="mb-0">Welcome mypage</p>
         </div>
-        @endif
     </div>
 </div>
+<!-- @if(Auth::check())
+    <div class="col-md-8">
+        <p><a href="/majan/top">ログイン後のTop画面にいく</a></p>
+    </div>
+@endif -->
 
 @endsection
