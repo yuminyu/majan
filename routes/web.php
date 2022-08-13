@@ -24,7 +24,7 @@ use App\Http\Controllers\DetailController;
 
 Route::get('/', function () {return view('index');});
 
-Route::get('/majan/top',[TopController::class,'index']);
+Route::get('/top',[TopController::class,'index']);
 
 Route::get('/majan/listattendant',[ListattendantController::class,'index']);
 
