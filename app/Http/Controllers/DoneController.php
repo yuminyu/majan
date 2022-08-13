@@ -39,7 +39,7 @@ class DoneController extends Controller
 
         $user->save();
         
-        return redirect('/done');
+        return view('done');
         
     }
 }
