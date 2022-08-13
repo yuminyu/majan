@@ -18,7 +18,7 @@
                     @include('common.error')
                     <!-- バリデーションエラーの表示に使用-->
                     <!-- 投稿フォーム -->
-                    <form action="{{ url('/majan/done') }}" method="POST" class="form-horizontal">
+                    <form action="{{ url('done') }}" method="POST" class="form-horizontal">
                         {{ csrf_field() }}
                         <!-- 投稿のタイトル -->
                         <div class="form-group">
