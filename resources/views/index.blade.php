@@ -8,7 +8,7 @@
         </div>
         @if(Auth::check())
         <div class="col-md-8">
-            <p><a href="/top">ログイン後のTop画面にいく</a></p>
+            <p><a href="/majan/top">ログイン後のTop画面にいく</a></p>
         </div>
         @endif
     </div>
