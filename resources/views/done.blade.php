@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <h1>アテンダント登録が完了しました。</h1>
                 </div>
-                <p><a href="/top">Topに戻る</a></p>
+                <p><a href="/majan/top">Topに戻る</a></p>
             </div>
         </div>
     </div>

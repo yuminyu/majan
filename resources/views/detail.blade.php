@@ -37,7 +37,7 @@
             </div>
         </div>		
 
-        <p><a href="/top">Topに戻る</a></p>
+        <p><a href="/majan/top">Topに戻る</a></p>
         </div>
     </div>
 </div>
