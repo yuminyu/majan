@@ -9,7 +9,7 @@
                     <h1>自分のプロフィール</h1>
                 </div>
                 <div class="card-body">
-                    <p><a href="/top">トップに戻る</a></p>
+                    <p><a href="/majan/top">トップに戻る</a></p>
                 </div>
             </div>
         </div>
