@@ -3,42 +3,35 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h1>アテンダントの登録画面です</h1>
-                </div>
-
-                  <!-- Bootstrapの定形コード… -->
-                <div class="card-body">
-                    <div class="card-title">
-                        アテンダント登録フォーム
+                    <div class="card-title d-flex justify-content-center">
+                        <h1>アテンダント登録フォーム</h1>
                     </div>
-                    <!-- バリデーションエラーの表示に使用-->
                     @include('common.error')
-                    <!-- バリデーションエラーの表示に使用-->
-                    <!-- 投稿フォーム -->
                     <form action="{{ url('done') }}" method="POST" class="form-horizontal">
                         {{ csrf_field() }}
-                        <!-- 投稿のタイトル -->
-                        <div class="form-group">
-                            アテンド雀荘
+                        <div class="row form-group">
+                            <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                                <p>アテンド雀荘</p>
+                            </div>
                             <div class="col-sm-6">
-                                <input type="text" name="attend_janso" class="form-control">
+                                <p><input type="text" name="attend_janso" class="form-control"></p>
                             </div>
                         </div>
-                        <!-- 投稿の本文 -->
-                        <div class="form-group">
-                            アテンド方針
+                        <div class="row form-group">
+                            <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                                <p>アテンド方針</p>
+                            </div>
                             <div class="col-sm-6">
-                                <input type="text" name="attend_houshin" class="form-control">
+                                <p><input type="text" name="attend_houshin" class="form-control"></p>
                             </div>
                         </div>
-                        <!--　登録ボタン -->
                         <div class="form-group">
-                            <div class="col-sm-offset-3 col-sm-6">
+                            <div class="col-sm-12 d-flex justify-content-center">
                                 <button type="submit" class="btn btn-primary">
-                                アテンダント登録ボタン
+                                    アテンダント登録ボタン
                                 </button>
                             </div>
                         </div>
