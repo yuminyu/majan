@@ -16,7 +16,7 @@ class YameruController extends Controller
     public function index(){
         $iamuser = Auth::user();
 
-        $iamuser->role_flag = 1;
+        $iamuser->role = "user(guest)";
 
         $iamuser->save();
 
