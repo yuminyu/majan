@@ -23,7 +23,7 @@
                 <thead>
                     <th>名前</th>
                     <th>登録アドレス</th>
-                    <th>role_flag</th>
+                    <th>role</th>
                 </thead>
                 <!-- テーブル本体 -->
                 <tbody>
@@ -38,7 +38,7 @@
                             </td>
 
                             <td class="table-text">
-                                <div>{{ $user_profile->role_flag }}</div>
+                                <div>{{ $user_profile->role }}</div>
                             </td>
 
                         </tr>
