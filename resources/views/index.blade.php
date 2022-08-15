@@ -11,10 +11,10 @@
         </div>
     </div>
 </div>
-<!-- @if(Auth::check())
-    <div class="col-md-8">
+@if(Auth::check())
+    <div>
         <p><a href="/majan/top">ログイン後のTop画面にいく</a></p>
     </div>
-@endif -->
+@endif
 
 @endsection
