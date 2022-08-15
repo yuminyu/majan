@@ -15,7 +15,7 @@ class ListattendantController extends Controller
     public function index()
     {
 
-        $attendants = User::get()->where('role_flag', 5);
+        $attendants = User::get()->where('role', "attendant");
 
         return view('listattendant',['attendants'=>$attendants]);
     }
