@@ -35,7 +35,7 @@ class DoneController extends Controller
 
         $user->attend_janso = $request->attend_janso;
         $user->attend_houshin = $request->attend_houshin;
-        $user->role_flag = 5;
+        $user->role = "attendant";
 
         $user->save();
         

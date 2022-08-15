@@ -35,7 +35,7 @@
                 <p><a href="/majan/recommend">オススメ雀荘</a></p>
             </div>
         </div>
-        @if($user_kengen === 1)
+        @if($user_kengen === "user(guest)")
         <div class="row">
             <div class="col">
                 <p><img src="{{ asset('img/welcom.jpg') }}" alt="" class="my-5 w-100"></p>
@@ -45,7 +45,7 @@
             </div>
         </div>
         @endif
-        @if($user_kengen === 5)
+        @if($user_kengen === "attendant")
         <div class="row">
             <div class="col">
                 <p><img src="{{ asset('img/welcom.jpg') }}" alt="" class="my-5 w-100"></p>

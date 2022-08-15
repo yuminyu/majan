@@ -15,7 +15,7 @@ class TopController extends Controller
     public function index()
     {
         $iamuser = Auth::user();
-        $role = $iamuser->role_flag;
+        $role = $iamuser->role;
         //dd($role);
         return view('top',['user_kengen'=> $role]);
     }
