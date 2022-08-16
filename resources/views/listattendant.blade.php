@@ -27,7 +27,7 @@
                         @foreach ($attendants as $attendant)
                             <tr>
                                 <td>
-                                    <img src="/uploads/{{ $attendant->myimg }}" width="100" height="100">
+                                    <img src="/majan/uploads/{{ $attendant->myimg }}" width="100" height="100">
                                 </td>
                                 <td class="table-text">
                                     <div>{{ $attendant->name }}</div>
