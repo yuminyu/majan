@@ -16,7 +16,7 @@ class AdmingamenController extends Controller
     {
         $iamuser = Auth::user();
 
-        if($iamuser->role_flag === 9){
+        if($iamuser->role === 9){
             return view('admingamen');
         }else{
             return view('top');
