@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Jnaso;
+use Auth;
+
 
 class RecommendController extends Controller
 {
@@ -13,6 +16,9 @@ class RecommendController extends Controller
 
     public function index()
     {
-        return view('recommend');
+        $jansos = Janso::orderBy('id', 'asc')->get();
+        dd($jansos);
+
+        return view('recommend',['jansos'=>$jansos]);
     }
 }
