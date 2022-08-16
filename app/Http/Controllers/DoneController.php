@@ -42,6 +42,7 @@ class DoneController extends Controller
         //画像を取得、ファイルオブジェクト？として
         $imgfile = $request->file('myimg');
         //dd($imgfile);
+        //aaa
 
         if ( !empty($imgfile) ) {
             // ファイルの拡張子取得
