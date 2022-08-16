@@ -18,7 +18,7 @@ class AdmingamenController extends Controller
 
         $role = $iamuser->role;
 
-        if($iamuser->role === 9){
+        if($iamuser->role === "admin"){
             return view('admingamen');
         }else{
             return view('top',['user_kengen'=> $role]);
