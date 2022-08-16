@@ -31,7 +31,7 @@ Route::get('/top',[TopController::class,'index']);
 
 Route::get('/listattendant',[ListattendantController::class,'index']);
 
-//Route::get('/recommend',[JansotorokuController::class,'index']);
+Route::get('/recommend',[JansotorokuController::class,'index']);
 
 Route::get('/attendantregister',[AttendantregisterController::class,'index']);
 
