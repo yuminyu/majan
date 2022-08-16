@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('role')->default("user(guest)");
             $table->string('attend_janso')->nullable();
             $table->string('attend_houshin')->nullable();
+            $table->string('myimg')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

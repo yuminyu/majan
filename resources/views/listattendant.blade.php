@@ -17,6 +17,7 @@
                 <table class="table table-striped task-table">
                     <!-- テーブルヘッダ -->
                     <thead>
+                        <th>アテンダント画像</th>
                         <th>名前</th>
                         <th>登録アドレス</th>
                         <th>アテンダント詳細</th>
@@ -25,6 +26,9 @@
                     <tbody>
                         @foreach ($attendants as $attendant)
                             <tr>
+                                <td>
+                                    <img src="/uploads/{{ $attendant->myimg }}" width="100" height="100">
+                                </td>
                                 <td class="table-text">
                                     <div>{{ $attendant->name }}</div>
                                 </td>

@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Auth;
+use Illuminate\Support\Str;
 
 class DoneController extends Controller
 {
@@ -21,6 +22,7 @@ class DoneController extends Controller
          $validator = Validator::make($request->all(), [
              'attend_janso' => ['required', 'string', 'max:255'],
              'attend_houshin' => ['required', 'string', 'max:255'],
+             'myimg'=>['required','file','max:2048'],
         ]);
 
         // //バリデーション:エラー
@@ -37,9 +39,34 @@ class DoneController extends Controller
         $user->attend_houshin = $request->attend_houshin;
         $user->role = "attendant";
 
-        $user->save();
-        
-        return view('done');
+        //画像を取得、ファイルオブジェクト？として
+        $imgfile = $request->file('myimg');
+        //dd($imgfile);
+
+        if ( !empty($imgfile) ) {
+            // ファイルの拡張子取得
+            $ext = $imgfile->guessExtension();
+    
+            //ファイル名を生成
+            $fileName = Str::random(32).'.'.$ext;
+            //dd($fileName);
+
+            // 画像のファイル名を任意のDBに保存
+            $user->myimg = $fileName;
+            $user->save();
+    
+            //public/uploadフォルダを作成
+            $target_path = public_path('/uploads/');
+    
+            //ファイルをpublic/uploadフォルダに移動
+            $imgfile->move($target_path,$fileName);
+
+            return view('done');
+    
+        }else{
+            
+            return view('done');
+        }
         
     }
 }
