@@ -28,6 +28,46 @@
                                 <p><input type="text" name="jansoTokutyo" class="form-control"></p>
                             </div>
                         </div>
+                        <div class="row form-group">
+                            <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                                <p>清潔さ</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><input type="text" name="seiketusa" class="form-control"></p>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                                <p>雰囲気</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><input type="text" name="huniki" class="form-control"></p>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                                <p>ゲーム代の安さ</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><input type="text" name="gamedainoyasusa" class="form-control"></p>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                                <p>また行きたい度</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><input type="text" name="mataikitaido" class="form-control"></p>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                                <p>location</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><input type="text" name="location" class="form-control"></p>
+                            </div>
+                        </div>
                         
                         <div class="row form-group">
                         <div class="col-sm-6 d-flex align-items-center justify-content-center">

@@ -18,22 +18,32 @@ class JansotorokuController extends Controller
     public function store(Request $request)
     {
         //バリデーション 
-         $validator = Validator::make($request->all(), [
-             'jansoName' => ['required', 'string', 'max:255'],
-             'jansoTokutyo' => ['required', 'string', 'max:255'],
-             'jansoimg'=>['required','file','max:2048'],
-        ]);
+        //  $validator = Validator::make($request->all(), [
+        //      'jansoName' => ['required', 'string', 'max:255'],
+        //      'jansoTokutyo' => ['required', 'string', 'max:255'],
+        //      'seiketusa'=>['required', 'integer', 'max:1'],
+        //      'huniki'=>['required', 'integer', 'max:1'],
+        //      'gamedainoyasusa'=>['required', 'integer', 'max:1'],
+        //      'mataikitaido'=>['required', 'integer', 'max:1'],
+        //      'location'=>['required', 'string', 'max:255'],
+        //      'jansoimg'=>['required','file','max:2048'],
+        // ]);
 
-        // //バリデーション:エラー
-         if ($validator->fails()) {
-             return redirect('/')
-                 ->withInput()
-                 ->withErrors($validator);
-        }
-        
+        // // //バリデーション:エラー
+        //  if ($validator->fails()) {
+        //      return redirect('/')
+        //          ->withInput()
+        //          ->withErrors($validator);
+        //}
+       //dd($request);
         $janso = new Janso;
         $janso->jansoName = $request->jansoName;
         $janso->jansoTokutyo = $request->jansoTokutyo;
+        $janso->seiketusa = $request->seiketusa;
+        $janso->huniki = $request->huniki;
+        $janso->gamedainoyasusa = $request->gamedainoyasusa;
+        $janso->mataikitaido = $request->mataikitaido;
+        $janso->location = $request->location;
         
         $imgfile = $request->file('jansoimg');
 

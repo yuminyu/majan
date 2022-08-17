@@ -18,6 +18,11 @@ return new class extends Migration
             $table->string('jansoName');
             $table->string('jansoTokutyo');
             $table->string('jansoimg')->nullable();
+            $table->integer('seiketusa')->nullable();
+            $table->integer('huniki')->nullable();
+            $table->integer('gamedainoyasusa')->nullable();
+            $table->integer('mataikitaido')->nullable();
+            $table->string('location')->nullable();
             $table->timestamps();
         });
     }
